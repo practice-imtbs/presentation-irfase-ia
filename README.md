@@ -4,7 +4,7 @@ Diaporama (28 slides) de l'intervention de Julien MORICE (service PracTice, IMT 
 
 Fil rouge : la direction d'une association du secteur social et médico-social (300 salarié·es, Essonne) prépare pour son conseil d'administration un dossier sur l'attractivité et la fidélisation des professionnel·les. Plan « l'escalier » : quatre marches (chercher, exploiter, faire faire, fabriquer) et deux paliers (le regard du manager, où vont mes données ?).
 
-**Publication prévue (après accord de Julien seulement) :** https://practice-imtbs.github.io/presentation-irfase-ia/ (le QR code de la dernière slide pointe déjà vers cette adresse).
+**En ligne depuis le 19/11/2026 (accord de Julien) :** https://practice-imtbs.github.io/presentation-irfase-ia/ (dépôt public https://github.com/practice-imtbs/presentation-irfase-ia, GitHub Pages sur `main`, racine ; le QR code de la dernière slide pointe vers cette adresse).
 
 ## Commandes
 
@@ -74,10 +74,10 @@ Les trois rapports de recherche approfondie déposés par Julien dans `../recher
 - `assets/img/` : logo IMT-BS, photo, capture du PracTice Store, QR code de la présentation.
 - `assets/videos/` : copies locales des vidéos (hors git).
 - `construire_versions.py` : génère `Presentation_IRFASE_Outils_IA_20261120_autonome.html` (images intégrées, vidéos en lien relatif vers `assets/videos/`).
-- Dépôt git local, sans dépôt distant tant que la publication n'est pas validée.
+- Dépôt git publié sur https://github.com/practice-imtbs/presentation-irfase-ia (public).
 
-## Publication (après accord)
+## Mise à jour en ligne
 
-1. Créer le dépôt `practice-imtbs/presentation-irfase-ia` sur GitHub et activer GitHub Pages (branche `main`, racine).
-2. `git remote add origin https://github.com/practice-imtbs/presentation-irfase-ia.git` puis `git push -u origin main`.
-3. Les vidéos ne partent pas sur GitHub : en ligne, seuls les lecteurs du Médiaserveur servent.
+Après une modification : `python3 construire_versions.py`, puis `git add -A && git commit -m "…" && git push`. GitHub Pages republie en une minute environ. Le dépôt appartient au compte GitHub `practice-imtbs` (`gh auth switch -u practice-imtbs` avant de pousser si `gh` est sur un autre compte).
+
+Les vidéos ne partent pas sur GitHub (exclues par `.gitignore`) : en ligne, seuls les lecteurs du Médiaserveur servent, et la copie locale n'existe que sur le Mac.
