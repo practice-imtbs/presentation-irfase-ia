@@ -278,6 +278,28 @@ window.VIDEOS = {
   .contact-card .who{display:flex;flex-direction:column;gap:6px;font-size:22px;color:var(--texte-2)}
   .contact-card .who b{font-size:32px;color:var(--blanc)}
 
+  /* chiffres clés, vérification, rapports */
+  .stats .big,.check .big{font-size:72px;font-weight:bold;line-height:1;color:var(--bleu);margin:6px 0 14px}
+  .stats .top-v .big{color:var(--rose)}
+  .stats small{display:block;font-size:17px;color:var(--texte-3);margin-top:14px}
+  .check.ok{border-top:6px solid #3cc47c} .check.ko{border-top:6px solid #e5484d}
+  .check.ko .big{color:#ff8a8d;text-decoration:line-through;text-decoration-thickness:4px}
+  .check .verdict{margin-top:18px;font-size:22px;font-weight:bold}
+  .check.ok .verdict{color:#6fdc9f} .check.ko .verdict{color:#ff8a8d}
+  .reports .card{display:flex;flex-direction:column}
+  .reports .card h3{font-size:30px}
+  .reports .rbtns{margin-top:auto;padding-top:22px}
+  .rbtns{display:flex;align-items:center;gap:22px;margin-top:22px;flex-wrap:wrap}
+  .rbtns .ext{font-size:20px}
+  .rbtn{font:bold 18px Arial,sans-serif;color:#fff;background:var(--violet);border:0;border-radius:30px;padding:10px 20px;cursor:pointer}
+  .rbtn:hover{background:#c42a9f}
+  #modal{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.82);display:flex;align-items:center;justify-content:center;padding:4vh 4vw}
+  #modal .mbox{position:relative;width:min(1200px,100%);max-height:100%;overflow:auto;background:var(--fond);border:1px solid var(--trait);border-top:6px solid var(--violet);padding:30px 38px}
+  #modal .tag{font-size:15px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:var(--bleu)}
+  #modal h3{font-size:32px;margin:8px 0 18px}
+  #modal pre{white-space:pre-wrap;font:20px/1.5 "SF Mono",Menlo,Consolas,monospace;color:#ececec;background:#1b1c1b;border:1px solid var(--trait);padding:20px 24px}
+  #modal .mclose{position:sticky;top:0;float:right;font:bold 15px Arial,sans-serif;color:#fff;background:var(--violet);border:0;border-radius:30px;padding:9px 16px;cursor:pointer}
+
   /* notes de l'orateur */
   #notes{position:fixed;left:0;right:0;bottom:0;max-height:40vh;overflow:auto;background:rgba(10,10,10,.96);border-top:3px solid var(--violet);
     color:#eee;font-size:18px;line-height:1.5;padding:16px 28px calc(52px + env(safe-area-inset-bottom,0px));display:none;z-index:20}
@@ -410,7 +432,7 @@ Chaque marche demande un peu plus d'autonomie à l'IA, et un peu plus de vigilan
   <p class="lead" style="font-size:26px">Compter de 5 à 30 minutes. Elle existe aussi dans Gemini, Le Chat de Mistral et Claude.</p>
   <div class="mini-big"><div class="cur">1</div><div>2</div><div>3</div><div>4</div></div>
   <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
-  <aside class="notes">1 min 30. Définir simplement : ce n'est plus une question-réponse, c'est une commande de travail. L'IA fait ce que ferait un·e stagiaire documentaliste pendant une demi-journée.
+  <aside class="notes">1 min. Définir simplement : ce n'est plus une question-réponse, c'est une commande de travail. L'IA fait ce que ferait un·e stagiaire documentaliste pendant une demi-journée.
 Ça vaut le coup pour un dossier, un comparatif, un état des lieux. C'est du gâchis pour une date ou une définition.</aside>
 </section>
 
@@ -441,7 +463,7 @@ Si le wifi ne suit pas : passer directement à la vidéo, slide suivante + 1.</a
   </div>
   <div class="callout" style="margin-top:26px;font-size:25px">Répondre précisément, c'est <b>ce qui fait la qualité du rapport</b>. Puis on valide le plan, et l'IA part travailler seule.</div>
   <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
-  <aside class="notes">2 min. En direct : lire à voix haute les questions que ChatGPT a vraiment posées, y répondre devant la salle, montrer le plan de recherche et le bouton « Démarrer ». Les questions affichées ici sont un exemple type, pas la réponse du jour.
+  <aside class="notes">1 min 30. En direct : lire à voix haute les questions que ChatGPT a vraiment posées, y répondre devant la salle, montrer le plan de recherche et le bouton « Démarrer ». Les questions affichées ici sont un exemple type, pas la réponse du jour.
 AES = accompagnant·e éducatif·ve et social·e.
 Message : ces questions ne sont pas une perte de temps, c'est l'IA qui vérifie qu'elle a compris la commande.</aside>
 </section>
@@ -464,21 +486,49 @@ Message : ces questions ne sont pas une perte de temps, c'est l'IA qui vérifie 
 La recherche lancée en direct tourne pendant ce temps : on y reviendra en fin de séance si elle a fini.</aside>
 </section>
 
-<!-- 10 · Le rapport -->
-<section class="slide" data-t="Ce que rapporte la recherche" data-seq="Marche 1 · Chercher" data-debut="14:35" data-fin="14:47" data-m="1">
+<!-- 10 · Les chiffres -->
+<section class="slide" data-t="Trois chiffres pour ouvrir le dossier" data-seq="Marche 1 · Chercher" data-debut="14:35" data-fin="14:47" data-m="1">
   <div class="kicker">Marche 1 · le résultat</div>
-  <h2>Ce que le rapport <em>apporte au CA</em></h2>
-  <div class="grid g3" style="margin-top:44px">
-    <div class="todo"><div class="big">… %</div><p>Postes vacants ou non pourvus dans le secteur</p><small>Rapport 1 · indicateur, année, source</small></div>
-    <div class="todo"><div class="big">… %</div><p>Turnover des professionnel·les</p><small>Rapport 1 · indicateur, année, source</small></div>
-    <div class="todo"><div class="big">…</div><p>Évolution des candidatures en formation de travail social</p><small>Rapport 1 · indicateur, année, source</small></div>
+  <h2>Trois chiffres <em>pour ouvrir le dossier</em></h2>
+  <div class="grid g3 stats" style="margin-top:44px">
+    <div class="card top-b"><div class="big">4,5 %</div><p>des postes vacants dans les établissements et services médico-sociaux</p><small>2,1 % en 2017 · CNSA, données 2023</small></div>
+    <div class="card top-v"><div class="big">24,4 %</div><p>de turnover en un an dans ces mêmes établissements</p><small>19,4 % en 2018 · CNSA, données 2023</small></div>
+    <div class="card top-b"><div class="big">1 sur 2</div><p>des éducatrices spécialisées a quitté le métier neuf ans après ses débuts</p><small>Entrées en 2011-2012 · DREES, mars 2025</small></div>
   </div>
-  <div class="todo" style="margin-top:34px;padding:18px 26px"><p style="margin:0;font-size:22px">Capture du tableau des chiffres clés du rapport 1 (ou de sa synthèse d'une page)</p></div>
-  <div class="callout v" style="margin-top:34px">Une recherche approfondie non vérifiée n'est pas un travail fait : <b>c'est un travail délégué</b>. Ouvrir deux ou trois sources, vérifier les dates, repérer les chiffres contradictoires.</div>
+  <div class="callout">Et en Essonne : <b>68,4 % des recrutements d'éducateur·rices spécialisé·es</b> sont jugés difficiles par les employeurs (France Travail, 2026).</div>
   <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
-  <aside class="notes">2 min 30. Fin de la marche 1 : il doit être 14 h 47.
-Montrer le rapport 1 déjà prêt (PDF dans Rapports/) : la synthèse d'une page, le tableau des chiffres clés, une source ouverte. Les trois chiffres de la slide sont à reprendre du rapport (emplacements « à compléter » : aucun chiffre inventé).
-Insister : vous restez responsable de ce que vous présentez au CA.</aside>
+  <aside class="notes">1 min 30. Les chiffres viennent des trois rapports (dossier recherchesApprofondies), qui citent chacun leur source. 4,5 % et 24,4 % : CNSA, « Les tensions des ressources humaines dans le secteur médico-social en 2023 », repris dans les rapports 1 et 3 (le site de la CNSA n'a pas pu être relu le 19/11 : à ouvrir une fois en direct si possible). « 1 sur 2 » : DREES, Études et résultats n° 1329, mars 2025 (rapport 2). Essonne : France Travail, enquête Besoins en main-d'œuvre 2026 (rapport 2), 68,4 % de 190 projets de recrutement.
+Message : en vingt minutes, un état des lieux sourcé que personne n'avait le temps de faire. Mais…</aside>
+</section>
+
+<!-- 11 · Le piège -->
+<section class="slide" data-t="Le piège : deux salaires pour une source" data-seq="Marche 1 · Chercher" data-debut="14:35" data-fin="14:47" data-m="1">
+  <div class="kicker">Marche 1 · vérifier</div>
+  <h2>Même source, <em>deux salaires</em></h2>
+  <div class="grid g2" style="margin-top:44px">
+    <div class="card check ok"><div class="tag">Rapport 1, page 1</div><div class="big">2 090 €</div><p>nets par mois, en équivalent temps plein, en 2023</p><div class="verdict">✓ Retrouvé dans la publication DREES de septembre 2025</div></div>
+    <div class="card check ko"><div class="tag">Rapport 1, page 2</div><div class="big">1 395 €</div><p>nets par mois, en équivalent temps plein, en 2023</p><div class="verdict">✗ Introuvable dans la source citée</div></div>
+  </div>
+  <div class="callout v">Une recherche approfondie non vérifiée n'est pas un travail fait : <b>c'est un travail délégué</b>. Ouvrir les sources, vérifier les dates, traquer les chiffres qui se contredisent.</div>
+  <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
+  <aside class="notes">1 min 30. Le meilleur exemple est dans notre propre rapport : la même référence DREES est citée pour 2 090 € puis pour 1 395 €. Vérification faite le 19/11 : la DREES (« Professionnelles du social : un revenu salarial annuel moyen de 13 410 euros en 2023 », 29/09/2025) donne bien 2 090 € nets par mois en EQTP ; 1 395 € n'y figure pas.
+Deuxième défaut du rapport 1 : ses renvois de sources sont restés illisibles à l'export (des codes du type 【66†L107】 au lieu de liens). Les rapports 2 et 3, eux, listent leurs liens. Moralité : un rapport sans source cliquable ne va pas au CA.</aside>
+</section>
+
+<!-- 12 · Trois commandes, trois rapports -->
+<section class="slide" data-t="Trois commandes, trois rapports" data-seq="Marche 1 · Chercher" data-debut="14:35" data-fin="14:47" data-m="1">
+  <div class="kicker">Marche 1 · le dossier complet</div>
+  <h2>Trois commandes, <em>trois rapports</em></h2>
+  <div class="grid g3 reports" style="margin-top:40px">
+    <div class="card top-b"><div class="tag">Recherche 1 · 5 pages</div><h3>L'état des lieux</h3><p>Ampleur, causes, conséquences, réponses publiques.</p><div class="rbtns"><button type="button" class="rbtn" data-prompt="1">Lire le prompt</button><a class="ext" href="assets/rapports/Rapport_1_Etat_des_lieux.pdf" target="_blank" rel="noopener">Le rapport ↗</a></div></div>
+    <div class="card top-v"><div class="tag">Recherche 2 · 17 pages</div><h3>Les leviers qui marchent</h3><p>Vingt leviers comparés, dix actions classées par effort et impact.</p><div class="rbtns"><button type="button" class="rbtn" data-prompt="2">Lire le prompt</button><a class="ext" href="assets/rapports/Rapport_2_Leviers_Essonne.pdf" target="_blank" rel="noopener">Le rapport ↗</a></div></div>
+    <div class="card top-b"><div class="tag">Recherche 3 · 16 pages</div><h3>Management et gouvernance</h3><p>Ce qui fait rester, et un tableau de bord pour le CA.</p><div class="rbtns"><button type="button" class="rbtn" data-prompt="3">Lire le prompt</button><a class="ext" href="assets/rapports/Rapport_3_Management_Gouvernance.pdf" target="_blank" rel="noopener">Le rapport ↗</a></div></div>
+  </div>
+  <div class="callout">Clin d'œil : pour recruter, le rapport 2 propose un « pacte écoles » avec trois à cinq instituts, <b>à commencer par l'IRFASE</b>.</div>
+  <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
+  <aside class="notes">2 min. Fin de la marche 1 : il doit être 14 h 47.
+Trois recherches lancées la veille, environ 20 minutes chacune : c'est la matière des marches suivantes. Cliquer sur « Lire le prompt » pour montrer la commande complète (Échap pour fermer), ou sur « Le rapport » pour ouvrir le PDF.
+Le rapport 2 s'est centré de lui-même sur l'Essonne et cite l'IRFASE, le Centre de formation de l'Essonne et le CFA du Social comme partenaires à mobiliser : effet garanti dans la salle.</aside>
 </section>
 
 <!-- ===================== MARCHE 2 · EXPLOITER (14 h 47 → 14 h 56) ===================== -->
@@ -550,7 +600,7 @@ Claude Cowork : le mode agent de l'application Claude pour ordinateur. On lui ou
   <div class="deliv">
     <div class="card top-b"><div class="ico">📝</div><h3>La note au CA</h3><p>Constat, leviers, dix actions classées par effort et impact. En Word.</p><div class="todo"><p>Capture de la note produite ce soir</p></div></div>
     <div class="card top-v"><div class="ico">🖥️</div><h3>Le support</h3><p>Une dizaine de slides pour la séance, aux couleurs de l'association.</p><div class="todo"><p>Capture du support produit ce soir</p></div></div>
-    <div class="card top-b"><div class="ico">📊</div><h3>Le tableau de bord</h3><p>8 à 10 indicateurs : turnover, absentéisme, postes vacants… avec leurs seuils d'alerte.</p><div class="todo"><p>Capture du tableur produit ce soir</p></div></div>
+    <div class="card top-b"><div class="ico">📊</div><h3>Le tableau de bord</h3><p>Rotation, vacance, absentéisme, fidélisation des recrues à 12 mois, intention de partir… avec leurs seuils d'alerte.</p><div class="todo"><p>Capture du tableur produit ce soir</p></div></div>
   </div>
   <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
   <aside class="notes">4 min. En direct : Claude Cowork ouvert sur le dossier qui contient les rapports 2 et 3. Dicter la demande, montrer le plan que l'agent annonce, puis les fichiers qui apparaissent dans le dossier. Pendant qu'il travaille, ouvrir les trois livrables déjà produits la veille.
@@ -781,6 +831,40 @@ Le QR code renvoie à la version en ligne (à publier après accord). Questions 
 
 </div>
 
+<div id="modal" hidden role="dialog" aria-modal="true" aria-label="Prompt de la recherche"><div class="mbox"><button type="button" class="mclose">Fermer ✕</button><div class="mbody"></div></div></div>
+<template id="tpl-prompt-1"><div class="tag">Recherche 1 · le prompt complet</div><h3>L&#x27;état des lieux</h3><pre>Je dirige une association du secteur social et médico-social en Essonne (environ 300 salarié·es, plusieurs établissements : protection de l&#x27;enfance, handicap, insertion). Je prépare un dossier pour mon conseil d&#x27;administration sur les difficultés de recrutement et de fidélisation des professionnel·les.
+
+Réalise un état des lieux documenté de la crise d&#x27;attractivité des métiers du social et du médico-social en France :
+1. L&#x27;ampleur du phénomène : postes vacants, turnover, absentéisme, recours à l&#x27;intérim, baisse des candidatures dans les formations en travail social. Donne des chiffres récents et datés, au niveau national, et pour l&#x27;Île-de-France quand ils existent.
+2. Les causes : rémunérations, conditions de travail, sens et reconnaissance, organisation, image des métiers, concurrence d&#x27;autres secteurs.
+3. Les conséquences pour les personnes accompagnées, les équipes et les établissements.
+4. Les réponses publiques et de branche déjà engagées (revalorisations salariales, travaux sur les conventions collectives, rapports et plans nationaux récents) et leurs limites.
+
+Appuie-toi en priorité sur des sources institutionnelles et professionnelles françaises (ministères, DREES, Cour des comptes, Haut Conseil du travail social, fédérations employeurs, observatoires de branche, recherche académique), publiées de préférence depuis 2022. Cite chaque source avec son lien et sa date, signale les chiffres contradictoires ou incertains.
+
+Livrable : un rapport structuré en français, lisible par des administrateur·rices bénévoles, avec une synthèse d&#x27;une page en tête et un tableau récapitulatif des chiffres clés (indicateur, valeur, année, source).</pre></template>
+<template id="tpl-prompt-2"><div class="tag">Recherche 2 · le prompt complet</div><h3>Les leviers qui marchent</h3><pre>Je dirige une association du secteur social et médico-social en Essonne (environ 300 salarié·es, plusieurs établissements). Je dois proposer à mon conseil d&#x27;administration un plan d&#x27;action pour attirer et fidéliser les professionnel·les (éducateur·rices spécialisé·es, moniteur·rices-éducateur·rices, accompagnant·es éducatif·ves et sociaux·ales, cadres intermédiaires).
+
+Recherche les leviers d&#x27;attractivité et de fidélisation qui ont fait leurs preuves, à la main d&#x27;un employeur associatif, sans attendre une décision nationale :
+1. Recrutement : marque employeur, partenariats avec les écoles et instituts de formation, apprentissage et alternance, accueil des stagiaires, cooptation, reconversions.
+2. Intégration et parcours : tutorat, formation continue, mobilité interne, évolution de carrière.
+3. Conditions et organisation du travail : plannings, autonomie des équipes, temps de travail, logement, transport, garde d&#x27;enfants, prévention de l&#x27;usure professionnelle.
+4. Reconnaissance et management : pratiques managériales, participation aux décisions, analyse des pratiques.
+
+Pour chaque levier, cherche des exemples concrets d&#x27;associations ou d&#x27;établissements en France, et des expériences étrangères comparables (Belgique, Québec, pays nordiques, Pays-Bas), avec les résultats observés quand ils sont mesurés. Distingue clairement ce qui est évalué de ce qui relève du témoignage.
+
+Livrable : un rapport en français avec, à la fin, un tableau comparatif des leviers (levier, exemple, coût estimé faible / moyen / élevé, délai de mise en œuvre, effet attendu, niveau de preuve, source) et une proposition de dix actions prioritaires classées par rapport effort / impact. Cite toutes les sources avec lien et date.</pre></template>
+<template id="tpl-prompt-3"><div class="tag">Recherche 3 · le prompt complet</div><h3>Management et gouvernance</h3><pre>Je dirige une association du secteur social et médico-social (environ 300 salarié·es, plusieurs établissements). Mon conseil d&#x27;administration s&#x27;interroge sur ce que le management et la gouvernance peuvent changer, à moyens constants, pour que les professionnel·les restent.
+
+Réalise une synthèse de ce que disent la recherche et les retours d&#x27;expérience sur le lien entre pratiques de management, gouvernance et fidélisation des équipes dans le secteur social, médico-social et sanitaire :
+1. Les facteurs managériaux qui pèsent le plus sur l&#x27;intention de rester ou de partir : management de proximité, autonomie, charge administrative, sens du travail, conflits de valeurs, qualité du collectif.
+2. Les modèles d&#x27;organisation qui donnent plus d&#x27;autonomie aux équipes (équipes autonomes ou semi-autonomes, délégation, subsidiarité, organisations dites « apprenantes ») : principes, exemples documentés en France et à l&#x27;étranger, résultats, conditions de réussite et échecs connus.
+3. Le rôle de la gouvernance associative : place du conseil d&#x27;administration, délégations au directeur ou à la directrice et aux cadres, participation des salarié·es et des personnes accompagnées.
+4. Les indicateurs qu&#x27;un conseil d&#x27;administration peut suivre pour piloter le sujet (turnover, ancienneté, absentéisme, postes vacants, climat social…).
+
+Privilégie les travaux académiques (sciences de gestion, sociologie du travail), les rapports publics et les publications des fédérations du secteur, de préférence depuis 2018. Cite chaque source avec lien et date, et indique quand un résultat vient d&#x27;un autre secteur ou d&#x27;un autre pays.
+
+Livrable : un rapport en français avec une synthèse d&#x27;une page, puis une proposition de tableau de bord « attractivité et fidélisation » de 8 à 10 indicateurs pour un conseil d&#x27;administration (indicateur, définition, mode de calcul, fréquence, seuil d&#x27;alerte).</pre></template>
 <div id="notes"><div class="hd"><span class="seq" id="n-seq"></span><span class="fin" id="n-fin"></span><span class="clock" id="n-clock"></span></div><div id="notes-body"></div></div>
 <div id="toc" role="dialog" aria-label="Sommaire"><div class="tt">Sommaire · cliquer pour aller à la slide · Échap pour fermer</div><div id="tocgrid"></div></div>
 <div id="help">
@@ -936,7 +1020,15 @@ Le QR code renvoie à la version en ligne (à publier après accord). Questions 
     pauseAutres(); prechargerAutour();
   }
 
+  /* boîte des prompts */
+  var modal=document.getElementById('modal'), mbody=modal.querySelector('.mbody');
+  function openPrompt(n){ mbody.innerHTML=''; mbody.appendChild(document.getElementById('tpl-prompt-'+n).content.cloneNode(true)); modal.hidden=false; modal.querySelector('.mclose').focus(); }
+  function closePrompt(){ modal.hidden=true; mbody.innerHTML=''; }
+  [].forEach.call(document.querySelectorAll('[data-prompt]'),function(b){ b.addEventListener('click',function(){ openPrompt(b.getAttribute('data-prompt')); }); });
+  modal.addEventListener('click',function(e){ if(e.target===modal||e.target.closest('.mclose')) closePrompt(); });
+
   addEventListener('keydown',function(e){
+    if(!modal.hidden){ if(e.key==='Escape'){ e.preventDefault(); closePrompt(); } return; }
     if(e.metaKey||e.ctrlKey||e.altKey) return;
     var k=e.key;
     if(toc.classList.contains('on')&&k==='Escape'){ closeToc(); return; }

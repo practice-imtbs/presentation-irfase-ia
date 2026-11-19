@@ -1,6 +1,6 @@
 # Prise en main des outils IA · IRFASE, 20 novembre 2026
 
-Diaporama de l'intervention de Julien MORICE (service PracTice, IMT Business School) devant l'Executive Master de l'IRFASE (Évry-Courcouronnes), vendredi 20/11/2026, 14 h 30 - 15 h 30. Créé le 19/11/2026.
+Diaporama (28 slides) de l'intervention de Julien MORICE (service PracTice, IMT Business School) devant l'Executive Master de l'IRFASE (Évry-Courcouronnes), vendredi 20/11/2026, 14 h 30 - 15 h 30. Créé le 19/11/2026.
 
 Fil rouge : la direction d'une association du secteur social et médico-social (300 salarié·es, Essonne) prépare pour son conseil d'administration un dossier sur l'attractivité et la fidélisation des professionnel·les. Plan « l'escalier » : quatre marches (chercher, exploiter, faire faire, fabriquer) et deux paliers (le regard du manager, où vont mes données ?).
 
@@ -24,15 +24,15 @@ Sur tablette : glisser à gauche ou à droite, ou utiliser les boutons en bas à
 | Séquence | Slides | Début | Fin visée | Durée | Cumul |
 |---|---|---|---|---|---|
 | Ouverture | 1 à 5 | 14 h 30 | 14 h 35 | 5 min | 5 min |
-| Marche 1 · Chercher (ChatGPT) | 6 à 10 | 14 h 35 | 14 h 47 | 12 min | 17 min |
-| Marche 2 · Exploiter (Gemini Notebook) | 11 à 13 | 14 h 47 | 14 h 56 | 9 min | 26 min |
-| Marche 3 · Faire faire (Claude Cowork) | 14 à 16 | 14 h 56 | 15 h 06 | 10 min | 36 min |
-| Palier · le regard du manager | 17 et 18 | 15 h 06 | 15 h 13 | 7 min | 43 min |
-| Palier · où vont mes données ? | 19 et 20 | 15 h 13 | 15 h 19 | 6 min | 49 min |
-| Marche 4 · Fabriquer (PracTice Store) | 21 à 24 | 15 h 19 | 15 h 26 | 7 min | 56 min |
-| Clôture | 25 et 26 | 15 h 26 | 15 h 30 | 4 min | 60 min |
+| Marche 1 · Chercher (ChatGPT) | 6 à 12 | 14 h 35 | 14 h 47 | 12 min | 17 min |
+| Marche 2 · Exploiter (Gemini Notebook) | 13 à 15 | 14 h 47 | 14 h 56 | 9 min | 26 min |
+| Marche 3 · Faire faire (Claude Cowork) | 16 à 18 | 14 h 56 | 15 h 06 | 10 min | 36 min |
+| Palier · le regard du manager | 19 et 20 | 15 h 06 | 15 h 13 | 7 min | 43 min |
+| Palier · où vont mes données ? | 21 et 22 | 15 h 13 | 15 h 19 | 6 min | 49 min |
+| Marche 4 · Fabriquer (PracTice Store) | 23 à 26 | 15 h 19 | 15 h 26 | 7 min | 56 min |
+| Clôture | 27 et 28 | 15 h 26 | 15 h 30 | 4 min | 60 min |
 
-Les notes donnent un temps par slide ; leur somme fait 57 min 30, soit 2 min 30 de marge, surtout dans la marche 1. Vidéos passées en entier : Gemini Notebook (6 min 05 pour 5 min prévues) et Cowork (3 min 59 pour 3 min 30) dépassent d'1 min 30 au total, absorbées par la marge. Le vrai risque, ce sont les démos en direct (recherche approfondie, carnet, Cowork) : si l'une traîne, basculer sur la vidéo.
+Les notes donnent un temps par slide ; leur somme fait 59 min, soit 1 min de marge (la marche 1 tient pile en 12 min avec ses trois nouvelles slides). Vidéos passées en entier : Gemini Notebook (6 min 05 pour 5 min prévues) et Cowork (3 min 59 pour 3 min 30) dépassent d'1 min 30 au total : 30 secondes de trop, à rattraper en coupant la vidéo Gemini à 5 min. Le vrai risque, ce sont les démos en direct (recherche approfondie, carnet, Cowork) : si l'une traîne, basculer sur la vidéo.
 
 ## Vidéos
 
@@ -41,14 +41,14 @@ Toutes les vidéos sont déclarées dans **un seul bloc `window.VIDEOS`, en têt
 | Clé | Slide | Vidéo retenue | Durée | Copie locale |
 |---|---|---|---|---|
 | `recherche` | 9 | Atelier de rentrée, « La recherche approfondie » (v126d57857dbe4dfgqv8) | 1 min 41 | oui |
-| `notebook` | 13 | Atelier de rentrée, « Apprendre avec Gemini Notebook » (v126d5785c9402wscekx) | 6 min 05 | oui |
-| `cowork` | 16 | « Le pipeline vidéo avec Claude Cowork » (v126d3f9f9e01qh3478o) | 3 min 59 | oui |
-| `compterendu` | 18 | « Le compte rendu à la main, avec un harnais » (v126d5d121f03i66a3ar) | 3 min 51 | oui |
-| `application` | 23 | IMT Smart Minutes (v126d62234168kcpdlyv) | 1 min 53 | oui |
+| `notebook` | 15 | Atelier de rentrée, « Apprendre avec Gemini Notebook » (v126d5785c9402wscekx) | 6 min 05 | oui |
+| `cowork` | 18 | « Le pipeline vidéo avec Claude Cowork » (v126d3f9f9e01qh3478o) | 3 min 59 | oui |
+| `compterendu` | 20 | « Le compte rendu à la main, avec un harnais » (v126d5d121f03i66a3ar) | 3 min 51 | oui |
+| `application` | 25 | IMT Smart Minutes (v126d62234168kcpdlyv) | 1 min 53 | oui |
 
 Toutes sont muettes ou presque (captures d'écran à commenter), sauf l'extrait du résumé audio dans Gemini Notebook (vers 3 min 40). Les autres vidéos fournies sont téléchargées dans `assets/videos/` et listées en commentaire dans le bloc, prêtes à servir : démo Cytiva muette (2 min 11), Gemini Notebook Cytiva (9 min 28), « Articuler plusieurs outils IA » (2 min, sur la création d'un visuel : écartée), PracTice Store public (7 min 57), espaces privés (2 min 32), LearnyBot (3 min 03), trailer du PracTice Store (55 s, sans permalien).
 
-Point de vigilance : la vidéo du compte rendu (slide 18) montre un vrai compte rendu interne avec des noms ; elle a déjà été diffusée aux Jeudis de l'IA, mais avancer vite sur le document final.
+Point de vigilance : la vidéo du compte rendu (slide 20) montre un vrai compte rendu interne avec des noms ; elle a déjà été diffusée aux Jeudis de l'IA, mais avancer vite sur le document final.
 
 ### Mode hors ligne
 
@@ -58,17 +58,19 @@ Point de vigilance : la vidéo du compte rendu (slide 18) montre un vrai compte 
 - Testé le 19/11/2026 dans le navigateur (1920 × 1080) : lecteur en ligne chargé sur les cinq slides vidéo, bascule automatique avec un hôte injoignable, lecture de la copie locale en mode forcé. La coupure réelle du wifi n'a pas pu être simulée : à vérifier sur le Mac avant de partir (couper le wifi, ouvrir `index.html` en double-cliquant, aller sur la slide 9).
 - En salle : ouvrir `index.html` depuis ce dossier (ou la version autonome, posée à côté de `assets/`). Si le wifi est mauvais, appuyer sur `L` dès le début.
 
-## Emplacements « à compléter »
+## Rapports et prompts (ajoutés le 19/11/2026 après-midi)
 
-Cadres jaunes en pointillés, à remplir quand les rapports seront dans `../Rapports/` (aucun chiffre sur le secteur n'est inventé) :
+Les trois rapports de recherche approfondie déposés par Julien dans `../recherchesApprofondies/` sont copiés dans `assets/rapports/` (Rapport_1_Etat_des_lieux.pdf, Rapport_2_Leviers_Essonne.pdf, Rapport_3_Management_Gouvernance.pdf) et s'ouvrent depuis la slide 12. Le bouton « Lire le prompt » affiche le prompt complet de chaque recherche (textes de `../Prompts_Recherches_Approfondies.md`), Échap pour fermer.
 
-- Slide 10 : trois chiffres clés du rapport 1 (postes vacants, turnover, candidatures en formation) et la capture du tableau des chiffres clés.
-- Slide 15 : captures de la note au CA, du support et du tableau de bord produits par Claude Cowork.
-- Slide 8 : les questions de clarification affichées sont un exemple type ; les vraies questions de ChatGPT se lisent en direct.
+- **Slide 10, trois chiffres** : 4,5 % de postes vacants et 24,4 % de turnover dans les ESMS (CNSA, données 2023, cités par les rapports 1 et 3), « une éducatrice spécialisée sur deux a quitté le métier neuf ans après » (DREES, mars 2025, rapport 2), et 68,4 % de recrutements difficiles d'éducateur·rices spécialisé·es en Essonne (France Travail, BMO 2026, rapport 2). La page de la CNSA n'a pas pu être relue le 19/11 (certificat refusé) : à ouvrir une fois avant la séance.
+- **Slide 11, le piège** : le rapport 1 cite la même source DREES pour deux salaires, 2 090 € et 1 395 €. Vérification du 19/11 : 2 090 € figure bien dans la publication DREES du 29/09/2025, 1 395 € est introuvable. Ses renvois de sources sont aussi restés illisibles à l'export (【66†L107】) : exemple vivant du « travail délégué ».
+- **Écarté** : les chiffres des formations sociales du rapport 1 (57 300 inscrits en 2023, −11,2 % en première année depuis 2010) n'ont pas été retrouvés à la DREES, dont la dernière publication porte sur 2025 (55 900 inscrits, −2,3 %).
+- **Encore à compléter** (cadres jaunes) : slide 17, captures de la note au CA, du support et du tableau de bord produits par Claude Cowork. Slide 8 : les questions de clarification affichées sont un exemple type.
 
 ## Fichiers
 
 - `index.html` : la présentation (moteur repris de la présentation CODOFO du 04/11/2026, sommaire et commandes tactiles de l'atelier de rentrée).
+- `assets/rapports/` : les trois rapports en PDF (publiés avec la présentation).
 - `assets/img/` : logo IMT-BS, photo, capture du PracTice Store, QR code de la présentation.
 - `assets/videos/` : copies locales des vidéos (hors git).
 - `construire_versions.py` : génère `Presentation_IRFASE_Outils_IA_20261120_autonome.html` (images intégrées, vidéos en lien relatif vers `assets/videos/`).
