@@ -79,7 +79,7 @@ Les trois rapports de recherche approfondie déposés par Julien dans `../recher
 
 - `index.html` : la présentation (moteur repris de la présentation CODOFO du 04/11/2026, sommaire et commandes tactiles de l'atelier de rentrée).
 - `assets/rapports/` : les trois rapports en PDF (publiés avec la présentation).
-- `assets/img/` : logo IMT-BS, photo, capture du PracTice Store, QR code de la présentation.
+- `assets/img/` : logo IMT-BS, photo, capture du PracTice Store, QR codes de la présentation, du rapport Gemini et du profil LinkedIn (slides 2 et 30).
 - `assets/videos/` : copies locales des vidéos (hors git).
 - `construire_versions.py` : génère `Presentation_IRFASE_Outils_IA_20261120_autonome.html` (images intégrées, vidéos en lien relatif vers `assets/videos/`).
 - Dépôt git publié sur https://github.com/practice-imtbs/presentation-irfase-ia (public).
