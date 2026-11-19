@@ -22,11 +22,17 @@ window.VIDEOS = {
     local: "assets/videos/Recherche_Approfondie_Atelier.mp4",
     duree: "1 min 41"
   },
-  notebook: {
-    titre: "Gemini Notebook : interroger ses sources",
-    permalien: "https://mediaserver.ip-paris.fr/permalink/v126d5785c9402wscekx/",
-    local: "assets/videos/Gemini_Notebook_Atelier.mp4",
-    duree: "6 min 05"
+  podcast: {
+    titre: "Stopper l'hémorragie dans le médico-social (résumé audio Gemini Notebook)",
+    permalien: "https://mediaserver.ip-paris.fr/permalink/v126d68cf011cqe8ydae/",
+    local: "assets/videos/Gemini_Podcast_Medico_Social.m4a",
+    duree: "15 min 18"
+  },
+  videogemini: {
+    titre: "Stratégies RH décodées (vidéo Gemini Notebook)",
+    permalien: "https://mediaserver.ip-paris.fr/permalink/v126d68cf011al793ap1/",
+    local: "assets/videos/Gemini_Video_Strategies_RH.mp4",
+    duree: "6 min 22"
   },
   cowork: {
     titre: "Claude Cowork enchaîne les étapes",
@@ -48,6 +54,7 @@ window.VIDEOS = {
   }
   /* Autres vidéos disponibles, prêtes à remplacer une ligne ci-dessus :
      Recherche approfondie, démo muette Cytiva (2 min 11) : v126d67bc511cgvgk244 · assets/videos/Recherche_Approfondie_Cytiva_Muette.mp4
+     Gemini Notebook, atelier de rentrée (6 min 05)       : v126d5785c9402wscekx · assets/videos/Gemini_Notebook_Atelier.mp4
      Gemini Notebook, webinaire Cytiva (9 min 28)         : v126d67bc53e47pow4rw · assets/videos/Gemini_Notebook_Cytiva.mp4
      Articuler plusieurs outils IA (2 min)                 : v126d5785a4ffcnxhbo8 · assets/videos/Articuler_Outils_Harnais.mp4
      PracTice Store, applications publiques (7 min 57)     : v126d6380b67ftrhl81f · assets/videos/PracTice_Store_Public.mp4
@@ -299,6 +306,19 @@ window.VIDEOS = {
   #modal h3{font-size:32px;margin:8px 0 18px}
   #modal pre{white-space:pre-wrap;font:20px/1.5 "SF Mono",Menlo,Consolas,monospace;color:#ececec;background:#1b1c1b;border:1px solid var(--trait);padding:20px 24px}
   #modal .mclose{position:sticky;top:0;float:right;font:bold 15px Arial,sans-serif;color:#fff;background:var(--violet);border:0;border-radius:30px;padding:9px 16px;cursor:pointer}
+
+  /* rapport Gemini : aperçu typographique et lien discret */
+  .gdoc-wrap{display:grid;grid-template-columns:1fr 400px;gap:50px;margin-top:36px;align-items:center}
+  .gdoc{background:#fff;color:#1f1f1f;padding:34px 40px;border-top:6px solid var(--bleu);box-shadow:0 30px 70px rgba(0,0,0,.45)}
+  .gdoc .gtitle{font-size:32px;font-weight:bold;line-height:1.2}
+  .gdoc .gsrc{font-size:17px;color:#5f6368;margin-top:10px}
+  .gdoc ol{margin:22px 0 0 28px;font-size:22px;line-height:1.5;color:#3c4043}
+  .gside p{font-size:25px;line-height:1.42;color:var(--texte-2)}
+  .gside p b{color:var(--blanc)}
+  .glink{display:flex;align-items:center;gap:20px;margin-top:34px}
+  .glink img{width:130px;height:130px;background:#fff;padding:6px;object-fit:contain}
+  .glink span{display:block;font-size:14px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:var(--texte-3)}
+  .glink a{display:inline-block;margin-top:6px;font-size:24px;font-weight:bold;color:var(--bleu);text-decoration:none;border-bottom:2px solid currentColor}
 
   /* notes de l'orateur */
   #notes{position:fixed;left:0;right:0;bottom:0;max-height:40vh;overflow:auto;background:rgba(10,10,10,.96);border-top:3px solid var(--violet);
@@ -556,26 +576,76 @@ Gratuit avec un compte Google. Montrer le carnet déjà prêt avec les trois rap
     <div class="card top-b"><div class="ico">📑</div><h3>Partager un rapport</h3><p>Une note de synthèse ou une foire aux questions, prête à diffuser.</p></div>
   </div>
   <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
-  <aside class="notes">2 min 30. En direct dans le carnet préparé : poser la question des leviers peu coûteux, cliquer sur une citation pour montrer le passage source. Puis lancer 20 secondes du résumé audio (préparé à l'avance).
+  <aside class="notes">2 min. En direct dans le carnet préparé : poser la question des leviers peu coûteux, cliquer sur une citation pour montrer le passage source. Les trois slides suivantes montrent ce que le carnet a produit sur notre dossier.
 Idée forte pour des administrateur·rices bénévoles : écouter le dossier dans la voiture plutôt que lire 60 pages.</aside>
 </section>
 
-<!-- 13 · Vidéo Gemini Notebook -->
-<section class="slide" data-t="Vidéo · Gemini Notebook" data-seq="Marche 2 · Exploiter" data-debut="14:47" data-fin="14:56" data-m="2">
-  <div class="kicker">Marche 2 · en vidéo</div>
-  <h2>Un carnet, <em>tous les formats</em></h2>
+<!-- 13 · Résumé audio Gemini -->
+<section class="slide" data-t="Le résumé audio, sur notre dossier" data-seq="Marche 2 · Exploiter" data-debut="14:47" data-fin="14:56" data-m="2">
+  <div class="kicker">Marche 2 · le cas fil rouge · résumé audio</div>
+  <h2>Le dossier <em>en podcast</em></h2>
   <div class="video-wrap">
-    <div class="vid" data-video="notebook"></div>
+    <div class="vid" data-video="podcast"></div>
     <div class="vside">
-      <div class="meta">Vidéo · à commenter</div>
+      <div class="meta">Généré à partir des trois rapports</div>
       <div class="dur" data-dur></div>
-      <p>Les sources ajoutées, puis le <b>résumé audio</b>, les fiches de révision, la <b>carte mentale</b> et le rapport, à partir du même rapport de recherche.</p>
+      <p>Deux voix discutent du dossier : <b>« Stopper l'hémorragie dans le médico-social »</b>. Un clic sur « Résumé audio », quelques minutes d'attente.</p>
       <div class="links"></div>
     </div>
   </div>
   <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
-  <aside class="notes">5 min au plus. Fin de la marche 2 : il doit être 14 h 56.
-Vidéo de 6 min, sur un autre sujet (l'IA en école de commerce) : avancer à la main. À montrer : la création des formats (début), l'extrait du résumé audio vers 3 min 40 (le son passe), la carte mentale, le rapport. Couper dès qu'on dépasse 14 h 55.</aside>
+  <aside class="notes">1 min 30 (en écouter 45 secondes au plus). Résumé audio produit par Gemini Notebook à partir des trois rapports de recherche approfondie. Fichier audio : le lecteur affiche une vignette fixe.
+Message pour le CA : des administrateur·rices bénévoles qui écoutent le dossier en voiture plutôt que de lire 40 pages.
+Passer le début (0:00 à 0:45) : l'image de la plomberie, « une offre d'emploi d'un côté, une candidature de l'autre », que la suite démonte.
+Rappel honnête : c'est une IA qui parle et qui reprend ses sources. Ici, le salaire faux du rapport 1 n'a pas été repris (vérifié sur la transcription), mais rien ne le garantit d'avance.</aside>
+</section>
+
+<!-- 14 · Vidéo explicative Gemini -->
+<section class="slide" data-t="La vidéo explicative, sur notre dossier" data-seq="Marche 2 · Exploiter" data-debut="14:47" data-fin="14:56" data-m="2">
+  <div class="kicker">Marche 2 · le cas fil rouge · vidéo</div>
+  <h2>Le dossier <em>en vidéo</em></h2>
+  <div class="video-wrap">
+    <div class="vid" data-video="videogemini"></div>
+    <div class="vside">
+      <div class="meta">Généré à partir des trois rapports</div>
+      <div class="dur" data-dur></div>
+      <p><b>« Stratégies RH décodées »</b> : une voix off, des illustrations, des graphiques, un plan d'action sur dix-huit mois. Sans monteur.</p>
+      <div class="links"></div>
+    </div>
+  </div>
+  <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
+  <aside class="notes">2 min 30 (en montrer 2 minutes, avancer à la main). Vidéo produite par la fonction vidéo de Gemini Notebook à partir des trois rapports. À montrer : le seau qui fuit (l'image de la fidélisation), le graphique du turnover 2018-2023, le parcours d'intégration J7 / J45 / J90, le plan en trois temps M0-M3, M3-M9, M7-M18.
+Utile pour : ouvrir une séance du CA, informer les équipes, accueillir les nouveaux administrateur·rices.</aside>
+</section>
+
+<!-- 15 · Le rapport Gemini -->
+<section class="slide" data-t="Le rapport partagé, sur notre dossier" data-seq="Marche 2 · Exploiter" data-debut="14:47" data-fin="14:56" data-m="2">
+  <div class="kicker">Marche 2 · le cas fil rouge · rapport</div>
+  <h2>Le dossier <em>en leçon interactive</em></h2>
+  <div class="gdoc-wrap">
+    <div class="gdoc">
+      <div class="gtitle">Vaincre la crise d'attractivité : attirer et fidéliser dans le secteur social et médico-social</div>
+      <div class="gsrc">D'après 3 sources</div>
+      <ol>
+        <li>Introduction</li>
+        <li>L'ampleur de la crise : anatomie d'un secteur sous tension</li>
+        <li>Recruter autrement : bâtir un vivier plutôt que multiplier les annonces</li>
+        <li>Organisation et conditions de travail : le vrai terrain de la fidélisation</li>
+        <li>Management de proximité, autonomie et gouvernance associative</li>
+      </ol>
+    </div>
+    <div class="gside">
+      <p>Fonction <b>« Rapport »</b> : un document structuré, avec ses objectifs et ses sources, <b>partageable par un simple lien</b>.</p>
+      <div class="glink">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAAFcAQAAAACsbTuBAAAB+UlEQVR4nO2bQW4DIQxFbat75ga9/7F6g+EEroyBIWmiojahTuf/xWgGniIvvowxhJWmlWWeJQI8CvAowP8B5q7NhuyZ2acvpwLFPC2ZRwnwVzipi66MsV1MxYp5VjJNEuCbcE8alFl3swRzeRmngsU8J5nkigB/A/O7Voe8Tsz3BfjH8NvVt+ZNM1NSSx1pDxmzAF7pDe0DZgnlzH1Ew8UsgNfBue5FyOtPd0grP/pUrJhnJdMkAf6aNy7aX5mt2LDFxfygEWMWwEtgsv1p36im4oWkRyHa3m16DxKzAF7mDd3J961a+hj1c3iBN86cN6ikCPeDv7tbDofYSJCYBfA6bzSpa3SFZxJfd+CNU64p1BLFlT26YeCN8+aN1CrSniuaYfogvHFGOBUzfPRzEzNGP3Qb+h6RYp6VTJME+HbP3PvkRZx2b3X5t+bNOqWBYhbAi3vm3I7mzRJp7w5xY2igmAXw4r6olqdZIu3aHGIjR3c0SMwCeBnMw+Uu/ag1xnEHrAj1xknXlFS7n1yeWs5TxpLj+WEI4LD1Bt9yyHE58OlhCOCXgFXtQuB47tZOVeLGfF+AHwnzVvsbtUGa2W4JPuKX7wvwa9z7orY3qUtJ63uEiVkA/829Lz7KjNpFLzuXFWHMSqZJAvwLmPGfx0GARwEeBZgGfQLqmgoqxX6qiQAAAABJRU5ErkJggg==" alt="QR code vers le rapport Gemini Notebook">
+        <div><span>Le lire</span><a href="https://notebook.google.com/notebook/f7570436-d31e-4c6a-86fa-313412261b63/artifact/ea391416-37a0-4d74-87cd-34538eba417c" target="_blank" rel="noopener">is.gd/kwysbi ↗</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
+  <aside class="notes">1 min 30. Fin de la marche 2 : il doit être 14 h 56.
+Rapport produit par la fonction « Rapport » de Gemini Notebook, au format leçon interactive : objectifs, cinq parties, résumé. Il s'ouvre sans compte par le lien court is.gd/kwysbi (cliquable sur la slide) ou le QR code. Lien complet : https://notebook.google.com/notebook/f7570436-d31e-4c6a-86fa-313412261b63/artifact/ea391416-37a0-4d74-87cd-34538eba417c
+L'introduction s'ouvre sur le chiffre « une éducatrice spécialisée sur deux quitte le métier neuf ans après » et reprend l'image de la baignoire qui fuit.</aside>
 </section>
 
 <!-- ===================== MARCHE 3 · FAIRE FAIRE (14 h 56 → 15 h 06) ===================== -->
