@@ -26,7 +26,7 @@ Sur tablette : glisser à gauche ou à droite, ou utiliser les boutons en bas à
 | Ouverture | 1 à 5 | 14 h 30 | 14 h 35 | 5 min | 5 min |
 | Marche 1 · Chercher (ChatGPT) | 6 à 12 | 14 h 35 | 14 h 47 | 12 min | 17 min |
 | Marche 2 · Exploiter (Gemini Notebook) | 13 à 17 | 14 h 47 | 14 h 56 | 9 min | 26 min |
-| Marche 3 · Faire faire (Claude Cowork) | 18 à 20 | 14 h 56 | 15 h 06 | 10 min | 36 min |
+| Marche 3 · Faire faire (Claude Cowork / Code) | 18 à 20 | 14 h 56 | 15 h 06 | 10 min | 36 min |
 | Palier · le regard du manager | 21 et 22 | 15 h 06 | 15 h 13 | 7 min | 43 min |
 | Palier · où vont mes données ? | 23 et 24 | 15 h 13 | 15 h 19 | 6 min | 49 min |
 | Marche 4 · Fabriquer (PracTice Store) | 25 à 28 | 15 h 19 | 15 h 26 | 7 min | 56 min |
