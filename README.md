@@ -1,6 +1,6 @@
 # Prise en main des outils IA · IRFASE, 20 novembre 2026
 
-Diaporama (30 slides) de l'intervention de Julien MORICE (service PracTice, IMT Business School) devant l'Executive Master de l'IRFASE (Évry-Courcouronnes), vendredi 20/11/2026, 14 h 30 - 15 h 30. Créé le 19/11/2026.
+Diaporama (31 slides) de l'intervention de Julien MORICE (service PracTice, IMT Business School) devant l'Executive Master de l'IRFASE (Évry-Courcouronnes), vendredi 20/11/2026, 14 h 30 - 15 h 30. Créé le 19/11/2026.
 
 Fil rouge : la direction d'une association du secteur social et médico-social (300 salarié·es, Essonne) prépare pour son conseil d'administration un dossier sur l'attractivité et la fidélisation des professionnel·les. Plan « l'escalier » : quatre marches (chercher, exploiter, faire faire, fabriquer) et deux paliers (le regard du manager, où vont mes données ?).
 
@@ -43,13 +43,16 @@ Toutes les vidéos sont déclarées dans **un seul bloc `window.VIDEOS`, en têt
 | `recherche` | 9 | Atelier de rentrée, « La recherche approfondie » (v126d57857dbe4dfgqv8) | 1 min 41 | oui |
 | `podcast` | 15 | Résumé audio Gemini Notebook sur les trois rapports, « Stopper l'hémorragie dans le médico-social » (v126d68cf011cqe8ydae, audio M4A) | 15 min 18 | oui |
 | `videogemini` | 16 | Vidéo Gemini Notebook sur les trois rapports, « Stratégies RH décodées » (v126d68cf011al793ap1) | 6 min 22 | oui |
-| `cowork` | 20 | « Le pipeline vidéo avec Claude Cowork » (v126d3f9f9e01qh3478o) | 3 min 59 | oui |
-| `compterendu` | 22 | « Le compte rendu à la main, avec un harnais » (v126d5d121f03i66a3ar) | 3 min 51 | oui |
-| `application` | 27 | IMT Smart Minutes (v126d62234168kcpdlyv) | 1 min 53 | oui |
+| `contexte` | 20 | « Context engineering avec Claude Code : du dossier aux trois livrables », démo muette du cas fil rouge de bout en bout, avec sept étapes minutées à côté (v126d68cf57ef0dhuepk, déposée le 19/11/2026) | 2 min 48 | oui |
+| `cowork` | 21 | « Le pipeline vidéo avec Claude Cowork » (v126d3f9f9e01qh3478o) | 3 min 59 | oui |
+| `compterendu` | 23 | « Le compte rendu à la main, avec un harnais » (v126d5d121f03i66a3ar) | 3 min 51 | oui |
+| `application` | 28 | IMT Smart Minutes (v126d62234168kcpdlyv) | 1 min 53 | oui |
 
 Toutes sont muettes ou presque (captures d'écran à commenter), sauf l'extrait du résumé audio dans Gemini Notebook (vers 3 min 40). Les autres vidéos fournies sont téléchargées dans `assets/videos/` et listées en commentaire dans le bloc, prêtes à servir : démo Cytiva muette (2 min 11), Gemini Notebook Cytiva (9 min 28), « Articuler plusieurs outils IA » (2 min, sur la création d'un visuel : écartée), PracTice Store public (7 min 57), espaces privés (2 min 32), LearnyBot (3 min 03), trailer du PracTice Store (55 s, sans permalien).
 
-Point de vigilance : la vidéo du compte rendu (slide 22) montre un vrai compte rendu interne avec des noms ; elle a déjà été diffusée aux Jeudis de l'IA, mais avancer vite sur le document final.
+Slide 20 (ajoutée le 19/11/2026) : à passer en 2 à 3 min, ou en relais de la démo en direct si elle traîne ; elle n'entre pas dans le minutage de 59 min, la prendre sur la marge ou sur la démo.
+
+Point de vigilance : la vidéo du compte rendu (slide 23) montre un vrai compte rendu interne avec des noms ; elle a déjà été diffusée aux Jeudis de l'IA, mais avancer vite sur le document final.
 
 ### Mode hors ligne
 

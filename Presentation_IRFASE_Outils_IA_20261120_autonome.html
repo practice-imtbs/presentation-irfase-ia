@@ -46,6 +46,12 @@ window.VIDEOS = {
     local: "assets/videos/Compte_Rendu_Harnais.mp4",
     duree: "3 min 51"
   },
+  contexte: {
+    titre: "Context engineering avec Claude Code : du dossier aux trois livrables",
+    permalien: "https://mediaserver.ip-paris.fr/permalink/v126d68cf57ef0dhuepk/",
+    local: "assets/videos/Context_Engineering_Claude_Code.mp4",
+    duree: "2 min 48"
+  },
   application: {
     titre: "IMT Smart Minutes : le compte rendu, en application souveraine",
     permalien: "https://mediaserver.ip-paris.fr/permalink/v126d62234168kcpdlyv/",
@@ -238,6 +244,13 @@ window.VIDEOS = {
   .vside .links a{font-size:20px}
   .vside .swap{font:bold 16px Arial,sans-serif;color:var(--blanc);background:rgba(255,255,255,.08);border:1px solid var(--trait);border-radius:30px;padding:8px 16px;cursor:pointer}
   .vside .swap:hover{background:rgba(0,184,222,.25)}
+  .video-wrap.etapes{grid-template-columns:1fr 470px;gap:36px}
+  .pas{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:12px;counter-reset:pas}
+  .pas li{display:grid;grid-template-columns:62px 1fr;gap:12px;align-items:baseline}
+  .pas .t{font:bold 17px Arial,sans-serif;color:var(--bleu);font-variant-numeric:tabular-nums}
+  .pas b{display:block;font-size:20px;color:var(--blanc);line-height:1.25}
+  .pas span{display:block;font-size:16.5px;line-height:1.35;color:var(--texte-2);margin-top:2px}
+  .video-wrap.etapes .links{margin-top:18px}
 
   /* trois livrables */
   .ask{margin-top:30px;font-size:27px;line-height:1.4;padding:20px 28px;background:#1b1c1b;border:1px solid var(--trait);border-left:6px solid var(--violet);border-radius:0;font-style:italic;max-width:1260px}
@@ -683,6 +696,32 @@ Claude Cowork : le mode agent de l'application Claude pour ordinateur. On lui ou
   <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
   <aside class="notes">4 min. En direct : Claude Cowork ouvert sur le dossier qui contient les rapports 2 et 3. Dicter la demande, montrer le plan que l'agent annonce, puis les fichiers qui apparaissent dans le dossier. Pendant qu'il travaille, ouvrir les trois livrables déjà produits la veille.
 Les indicateurs du tableau de bord viennent du rapport 3 (proposition de 8 à 10 indicateurs). Les emplacements « à compléter » attendent les captures.</aside>
+</section>
+
+<!-- 15 bis · Le contexte, pas à pas -->
+<section class="slide" data-t="Vidéo · le contexte, pas à pas" data-seq="Marche 3 · Faire faire" data-debut="14:56" data-fin="15:06" data-m="3">
+  <div class="kicker">Marche 3 · le cas fil rouge, de bout en bout</div>
+  <h2>Le contexte <em>fait le travail</em></h2>
+  <div class="video-wrap etapes">
+    <div class="vid" data-video="contexte"></div>
+    <div class="vside">
+      <div class="meta">Vidéo muette · <span data-dur></span></div>
+      <ol class="pas">
+        <li><span class="t">0:00</span><div><b>Le dossier de travail</b><span>Le cas, les trois rapports de recherche, le README du projet.</span></div></li>
+        <li><span class="t">0:20</span><div><b>La mémoire et les savoir-faire</b><span>CLAUDE.md (qui je suis, mes règles) et le dossier des compétences.</span></div></li>
+        <li><span class="t">0:32</span><div><b>Ouvrir Claude Code sur le dossier</b><span>L'agent ne voit que ce qu'on lui confie.</span></div></li>
+        <li><span class="t">0:44</span><div><b>Une demande d'une phrase</b><span>Le contexte déjà en place dit le reste.</span></div></li>
+        <li><span class="t">0:56</span><div><b>Le plan, puis le travail</b><span>Il lit les rapports et coche ses étapes.</span></div></li>
+        <li><span class="t">1:08</span><div><b>Trois livrables, en Word et en PDF</b><span>La note de deux pages, le support, le tableau de bord.</span></div></li>
+        <li><span class="t">2:08</span><div><b>Puis un site modifiable</b><span>Même conversation, même contexte, une demande de plus.</span></div></li>
+      </ol>
+      <div class="links"></div>
+    </div>
+  </div>
+  <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
+  <aside class="notes">2 à 3 min, ou en relais de la démo en direct si elle est lente. Vidéo muette du cas fil rouge, à commenter étape par étape.
+Le mot à faire passer : context engineering, préparer le contexte plutôt que d'écrire un long prompt. Le dossier, la mémoire (CLAUDE.md) et les compétences sont posés une fois ; ensuite une phrase suffit. C'est le harnais de la slide d'intercalaire, vu de l'intérieur.
+À montrer à 1:08 : la note tient en deux pages et reprend le salaire vérifié (2 090 €), pas le chiffre faux du rapport 1. À 2:08 : le site du tableau de bord, en ligne sur https://practice-imtbs.github.io/exemple-tableau-formation-ia/.</aside>
 </section>
 
 <!-- 16 · Vidéo Cowork -->
