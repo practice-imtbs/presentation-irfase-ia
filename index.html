@@ -92,14 +92,12 @@ window.VIDEOS = {
 
   /* badge démo en direct */
   .live{display:inline-flex;align-items:center;gap:10px;font-size:15px;letter-spacing:.12em;padding:7px 16px;border:2px solid var(--rose);color:var(--rose);border-radius:40px}
-  .live::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--rose);animation:pulse 1.6s infinite}
-  @keyframes pulse{50%{opacity:.25}}
-  @media (prefers-reduced-motion:reduce){.live::before{animation:none}}
+  .live::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--rose)}
 
   /* ======= l'escalier, repère permanent (en haut à droite) ======= */
   .stairs{position:absolute;right:110px;top:52px;display:flex;align-items:flex-end;gap:6px}
   .stairs .lab{font-size:15px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:var(--texte-3);margin-right:14px;align-self:center;text-align:right;line-height:1.35}
-  .stairs .lab b{display:block;color:var(--blanc);font-size:17px;letter-spacing:.06em}
+  .stairs .lab b{display:block;color:var(--blanc);font-size:17px;letter-spacing:.03em}
   .stairs .st{width:46px;border:2px solid var(--trait);border-bottom:0;border-radius:4px 4px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:5px;font-size:15px;font-weight:bold;color:var(--texte-3)}
   .stairs .st:nth-child(2){height:26px}.stairs .st:nth-child(3){height:40px}.stairs .st:nth-child(4){height:54px}.stairs .st:nth-child(5){height:68px}
   .stairs .st.done{background:rgba(0,184,222,.22);border-color:rgba(0,184,222,.5);color:var(--bleu)}
@@ -107,7 +105,7 @@ window.VIDEOS = {
 
   /* ======= grand escalier (slide 5 et intercalaires) ======= */
   .bigstairs{position:absolute;left:110px;right:110px;bottom:110px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;align-items:end}
-  .step{background:var(--fond-2);border:1px solid var(--trait);border-top:6px solid var(--texte-3);border-radius:6px 6px 0 0;padding:22px 24px;position:relative}
+  .step{background:var(--fond-2);border:1px solid var(--trait);border-top:6px solid var(--texte-3);border-radius:0;padding:22px 24px;position:relative}
   .step:nth-child(1){height:270px}.step:nth-child(2){height:355px}.step:nth-child(3){height:440px}.step:nth-child(4){height:525px}
   .step .n{font-size:58px;font-weight:bold;line-height:1;color:var(--texte-3)}
   .step h3{font-size:36px;margin-top:10px}
@@ -117,7 +115,7 @@ window.VIDEOS = {
   .step.on .n{color:var(--rose)}
   .step.done{border-top-color:var(--bleu)} .step.done .n{color:var(--bleu)}
   .step.later{opacity:.45}
-  .palier{position:absolute;font-size:15px;font-weight:bold;letter-spacing:.06em;color:var(--blanc);background:var(--fond);border:2px dashed var(--rose);border-radius:30px;padding:8px 16px;white-space:nowrap}
+  .palier{position:absolute;font-size:15px;font-weight:bold;letter-spacing:.02em;color:var(--blanc);background:var(--fond);border:2px dashed var(--rose);border-radius:30px;padding:8px 16px;white-space:nowrap}
 
   /* intercalaires de marche */
   .s-inter{background:var(--violet)}
@@ -143,13 +141,13 @@ window.VIDEOS = {
   .s-title .when{margin-top:26px;display:inline-block;font-size:21px;padding:10px 18px;border:1px solid var(--trait);border-radius:4px;color:var(--texte-2)}
   .logo-imtbs{position:absolute;left:110px;bottom:42px;height:62px}
   .s-title .partner{position:absolute;right:110px;bottom:52px;font-size:20px;color:var(--texte-2);text-align:right;line-height:1.4}
-  .s-title .partner b{display:block;font-size:30px;color:var(--blanc);letter-spacing:.06em}
+  .s-title .partner b{display:block;font-size:30px;color:var(--blanc);letter-spacing:.04em}
   .s-title .tri{position:absolute;right:0;top:0;width:420px;height:420px;opacity:.6}
 
   /* cartes et grilles */
   .grid{display:grid;gap:26px;margin-top:46px}
   .g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)}
-  .card{background:var(--fond-2);border:1px solid var(--trait);border-radius:6px;padding:28px 30px;position:relative}
+  .card{background:var(--fond-2);border:1px solid var(--trait);border-radius:0;padding:28px 30px;position:relative}
   .card .tag{font-size:16px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:var(--bleu);margin-bottom:12px}
   .card h3{font-size:32px;line-height:1.15;margin-bottom:12px}
   .card p{font-size:23px;line-height:1.42;color:var(--texte-2)}
@@ -202,7 +200,7 @@ window.VIDEOS = {
   .pp{display:grid;grid-template-columns:230px 1fr;gap:26px;align-items:start}
   .pp .lab{font-size:17px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:var(--bleu);padding-top:14px;text-align:right}
   .pp:nth-child(even) .lab{color:var(--rose)}
-  .pp .txt{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:23px;line-height:1.45;background:#1b1c1b;border:1px solid var(--trait);border-left:5px solid var(--bleu);border-radius:4px;padding:12px 20px;color:#e9e9e9}
+  .pp .txt{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:23px;line-height:1.45;background:#1b1c1b;border:1px solid var(--trait);border-left:5px solid var(--bleu);border-radius:0;padding:12px 20px;color:#e9e9e9}
   .pp:nth-child(even) .txt{border-left-color:var(--violet)}
 
   /* questions de clarification */
@@ -232,7 +230,7 @@ window.VIDEOS = {
   .vside .swap:hover{background:rgba(0,184,222,.25)}
 
   /* trois livrables */
-  .ask{margin-top:30px;font-size:27px;line-height:1.4;padding:20px 28px;background:#1b1c1b;border:1px solid var(--trait);border-left:6px solid var(--violet);border-radius:4px;font-style:italic;max-width:1260px}
+  .ask{margin-top:30px;font-size:27px;line-height:1.4;padding:20px 28px;background:#1b1c1b;border:1px solid var(--trait);border-left:6px solid var(--violet);border-radius:0;font-style:italic;max-width:1260px}
   .deliv{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:30px}
   .deliv .card h3{font-size:30px}
   .deliv .todo{margin-top:26px;padding:14px 18px}
@@ -252,8 +250,8 @@ window.VIDEOS = {
   .lights{display:flex;flex-direction:column;gap:16px;margin-top:34px}
   .light{display:grid;grid-template-columns:28px 1fr 1fr;gap:26px;align-items:center;padding:18px 24px;background:var(--fond-2);border:1px solid var(--trait);border-radius:6px}
   .light .dot{width:28px;height:28px;border-radius:50%}
-  .light h4{font-size:27px;line-height:1.2}
-  .light h4 small{display:block;font-size:19px;font-weight:normal;color:var(--texte-2);margin-top:4px}
+  .light h3{font-size:27px;line-height:1.2}
+  .light h3 small{display:block;font-size:19px;font-weight:normal;color:var(--texte-2);margin-top:4px}
   .light p{font-size:22px;line-height:1.38;color:var(--texte-2)}
   .light p b{color:var(--blanc)}
   .ask4{margin-top:20px;font-size:21px;color:var(--texte-2);line-height:1.5}
@@ -658,9 +656,9 @@ Trois familles, une seule question : où part mon document ? 1. Frontière : le 
   <div class="kicker">Palier · où vont mes données ?</div>
   <h2>Une règle <em>à trois couleurs</em></h2>
   <div class="lights">
-    <div class="light"><span class="dot" style="background:#3cc47c"></span><h4>Données publiques ou anonymisées<small>Rapports, études, textes de loi</small></h4><p><b>Tous les outils</b>, versions gratuites comprises.</p></div>
-    <div class="light"><span class="dot" style="background:#f2b134"></span><h4>Documents internes sans nom<small>Organisation, budgets, projets</small></h4><p><b>Offre professionnelle</b> avec engagement écrit : pas d'entraînement sur vos données, hébergement en Europe.</p></div>
-    <div class="light"><span class="dot" style="background:#e5484d"></span><h4>Personnes accompagnées, dossiers RH, santé<small>Des données sensibles</small></h4><p><b>Jamais dans un outil grand public</b>. IA souveraine ou locale, avis du ou de la DPO, hébergeur certifié pour les données de santé.</p></div>
+    <div class="light"><span class="dot" style="background:#3cc47c"></span><h3>Données publiques ou anonymisées<small>Rapports, études, textes de loi</small></h3><p><b>Tous les outils</b>, versions gratuites comprises.</p></div>
+    <div class="light"><span class="dot" style="background:#f2b134"></span><h3>Documents internes sans nom<small>Organisation, budgets, projets</small></h3><p><b>Offre professionnelle</b> avec engagement écrit : pas d'entraînement sur vos données, hébergement en Europe.</p></div>
+    <div class="light"><span class="dot" style="background:#e5484d"></span><h3>Personnes accompagnées, dossiers RH, santé<small>Des données sensibles</small></h3><p><b>Jamais dans un outil grand public</b>. IA souveraine ou locale, avis du ou de la DPO, hébergeur certifié pour les données de santé.</p></div>
   </div>
   <div class="ask4"><b>Avant d'acheter</b>Où vont les données ? Servent-elles à entraîner le modèle ? Qui gère les accès ? Combien coûte l'usage réel ?</div>
   <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
