@@ -258,6 +258,15 @@ window.VIDEOS = {
   .deliv .card h3{font-size:30px}
   .deliv .todo{margin-top:26px;padding:14px 18px}
   .deliv .todo p{font-size:18px;margin-top:0}
+  .deliv{margin-top:24px}
+  .deliv .card p{font-size:19px}
+  .apercu{display:block;margin-top:16px;height:200px;border-radius:6px;overflow:hidden;border:1px solid var(--trait);background:#fff}
+  .apercu img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .2s}
+  .apercu:hover img{transform:scale(1.03)}
+  .deliv .rbtns{margin-top:14px}
+  .siteweb{margin-top:22px;font-size:21px;color:var(--texte-2)}
+  .siteweb b{color:var(--blanc)}
+  @media (prefers-reduced-motion:reduce){.apercu img{transition:none}}
 
   /* trois familles d'IA */
   .fam{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:34px}
@@ -689,13 +698,14 @@ Claude Cowork : le mode agent de l'application Claude pour ordinateur. On lui ou
   <h2>Une demande, <em>trois livrables</em></h2>
   <div class="ask">« À partir des rapports du dossier, prépare pour le conseil d'administration une note de deux pages, un support de présentation et un tableau de bord de suivi. »</div>
   <div class="deliv">
-    <div class="card top-b"><div class="ico">📝</div><h3>La note au CA</h3><p>Constat, leviers, dix actions classées par effort et impact. En Word.</p><div class="todo"><p>Capture de la note produite ce soir</p></div></div>
-    <div class="card top-v"><div class="ico">🖥️</div><h3>Le support</h3><p>Une dizaine de slides pour la séance, aux couleurs de l'association.</p><div class="todo"><p>Capture du support produit ce soir</p></div></div>
-    <div class="card top-b"><div class="ico">📊</div><h3>Le tableau de bord</h3><p>Rotation, vacance, absentéisme, fidélisation des recrues à 12 mois, intention de partir… avec leurs seuils d'alerte.</p><div class="todo"><p>Capture du tableur produit ce soir</p></div></div>
+    <div class="card top-b"><div class="ico">📝</div><h3>La note au CA</h3><p>Constat, leviers, dix actions classées par effort et impact. En Word.</p><a class="apercu" href="assets/livrables/Livrable_1_Note_CA.pdf" target="_blank" rel="noopener"><img src="assets/img/apercu_note_ca.jpg" alt="Première page de la note au CA produite par Claude Code"></a><div class="rbtns"><a class="ext" href="assets/livrables/Livrable_1_Note_CA.pdf" target="_blank" rel="noopener">La note, 2 pages (PDF) ↗</a></div></div>
+    <div class="card top-v"><div class="ico">🖥️</div><h3>Le support</h3><p>Onze slides pour la séance, aux couleurs de l'association.</p><a class="apercu" href="assets/livrables/Livrable_2_Support_CA.pdf" target="_blank" rel="noopener"><img src="assets/img/apercu_support_ca.jpg" alt="Couverture du support de présentation produit par Claude Code"></a><div class="rbtns"><a class="ext" href="assets/livrables/Livrable_2_Support_CA.pdf" target="_blank" rel="noopener">Le support, 11 slides (PDF) ↗</a></div></div>
+    <div class="card top-b"><div class="ico">📊</div><h3>Le tableau de bord</h3><p>Dix indicateurs avec leurs seuils d'alerte, et le suivi des dix actions.</p><a class="apercu" href="assets/livrables/Livrable_3_Tableau_De_Bord.pdf" target="_blank" rel="noopener"><img src="assets/img/apercu_tableau_de_bord.jpg" alt="Première page du tableau de bord produit par Claude Code"></a><div class="rbtns"><a class="ext" href="assets/livrables/Livrable_3_Tableau_De_Bord.pdf" target="_blank" rel="noopener">Le tableau de bord, 3 pages (PDF) ↗</a></div></div>
   </div>
+  <div class="siteweb">Et en plus, demandé dans la même conversation : <b>le tableau de bord en site web modifiable</b> · <a class="ext" href="https://practice-imtbs.github.io/exemple-tableau-formation-ia/" target="_blank" rel="noopener">practice-imtbs.github.io/exemple-tableau-formation-ia ↗</a></div>
   <div class="foot"><span>20 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>IRFASE · Prise en main des outils IA</span></div>
   <aside class="notes">4 min. En direct : Claude Cowork ouvert sur le dossier qui contient les rapports 2 et 3. Dicter la demande, montrer le plan que l'agent annonce, puis les fichiers qui apparaissent dans le dossier. Pendant qu'il travaille, ouvrir les trois livrables déjà produits la veille.
-Les indicateurs du tableau de bord viennent du rapport 3 (proposition de 8 à 10 indicateurs). Les emplacements « à compléter » attendent les captures.</aside>
+Les indicateurs du tableau de bord viennent du rapport 3 (proposition de 8 à 10 indicateurs). Les trois PDF réellement produits par Claude Code s'ouvrent depuis les aperçus (assets/livrables/) : les participant·es peuvent les consulter en ligne. Le lien du bas mène au site du tableau de bord (mode autonome : leurs saisies restent dans leur navigateur).</aside>
 </section>
 
 <!-- 15 bis · Le contexte, pas à pas -->
