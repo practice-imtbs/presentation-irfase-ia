@@ -854,7 +854,7 @@ Le QR code renvoie à la version en ligne (à publier après accord). Questions 
     if(v._timer){ clearTimeout(v._timer); v._timer=null; }
     v._etat='local'; v.innerHTML='';
     if(!cfg.local){ attente(v,'Pas de copie locale pour cette vidéo : ouvrir le lien dans un onglet.'); lien(v,false); return; }
-    var vid=document.createElement('video'); vid.controls=true; vid.preload='metadata'; vid.src=cfg.local; vid.setAttribute('playsinline','');
+    var vid=document.createElement('video'); vid.controls=true; vid.preload='metadata'; vid.src=cfg.local+'#t=0.5'; /* #t : affiche une image au lieu d'un cadre noir */ vid.setAttribute('playsinline','');
     vid.onerror=function(){ attente(v,'Copie locale introuvable ('+cfg.local+'). Ouvrir le lien dans un onglet.'); };
     v.appendChild(vid);
     if(raison){ var bd=document.createElement('span'); bd.className='badge'; bd.textContent=raison; v.appendChild(bd); }
