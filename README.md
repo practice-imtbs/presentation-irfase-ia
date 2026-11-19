@@ -69,7 +69,7 @@ Cadres jaunes en pointillés, à remplir quand les rapports seront dans `../Rapp
 ## Fichiers
 
 - `index.html` : la présentation (moteur repris de la présentation CODOFO du 04/11/2026, sommaire et commandes tactiles de l'atelier de rentrée).
-- `assets/img/` : logos, photo, captures (PracTice Store, ILaaS), QR codes (présentation, PracTice Store).
+- `assets/img/` : logo IMT-BS, photo, capture du PracTice Store, QR code de la présentation.
 - `assets/videos/` : copies locales des vidéos (hors git).
 - `construire_versions.py` : génère `Presentation_IRFASE_Outils_IA_20261120_autonome.html` (images intégrées, vidéos en lien relatif vers `assets/videos/`).
 - Dépôt git local, sans dépôt distant tant que la publication n'est pas validée.
