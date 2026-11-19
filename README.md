@@ -1,6 +1,6 @@
 # Prise en main des outils IA · IRFASE, 20 novembre 2026
 
-Diaporama (29 slides) de l'intervention de Julien MORICE (service PracTice, IMT Business School) devant l'Executive Master de l'IRFASE (Évry-Courcouronnes), vendredi 20/11/2026, 14 h 30 - 15 h 30. Créé le 19/11/2026.
+Diaporama (30 slides) de l'intervention de Julien MORICE (service PracTice, IMT Business School) devant l'Executive Master de l'IRFASE (Évry-Courcouronnes), vendredi 20/11/2026, 14 h 30 - 15 h 30. Créé le 19/11/2026.
 
 Fil rouge : la direction d'une association du secteur social et médico-social (300 salarié·es, Essonne) prépare pour son conseil d'administration un dossier sur l'attractivité et la fidélisation des professionnel·les. Plan « l'escalier » : quatre marches (chercher, exploiter, faire faire, fabriquer) et deux paliers (le regard du manager, où vont mes données ?).
 
@@ -25,14 +25,14 @@ Sur tablette : glisser à gauche ou à droite, ou utiliser les boutons en bas à
 |---|---|---|---|---|---|
 | Ouverture | 1 à 5 | 14 h 30 | 14 h 35 | 5 min | 5 min |
 | Marche 1 · Chercher (ChatGPT) | 6 à 11 | 14 h 35 | 14 h 47 | 12 min | 17 min |
-| Marche 2 · Exploiter (Gemini Notebook) | 12 à 16 | 14 h 47 | 14 h 56 | 9 min | 26 min |
-| Marche 3 · Faire faire (Claude Cowork / Code) | 17 à 19 | 14 h 56 | 15 h 06 | 10 min | 36 min |
-| Palier · le regard du manager | 20 et 21 | 15 h 06 | 15 h 13 | 7 min | 43 min |
-| Palier · où vont mes données ? | 22 et 23 | 15 h 13 | 15 h 19 | 6 min | 49 min |
-| Marche 4 · Fabriquer (PracTice Store) | 24 à 27 | 15 h 19 | 15 h 26 | 7 min | 56 min |
-| Clôture | 28 et 29 | 15 h 26 | 15 h 30 | 4 min | 60 min |
+| Marche 2 · Exploiter (Gemini Notebook) | 12 à 17 | 14 h 47 | 14 h 56 | 9 min | 26 min |
+| Marche 3 · Faire faire (Claude Cowork / Code) | 18 à 20 | 14 h 56 | 15 h 06 | 10 min | 36 min |
+| Palier · le regard du manager | 21 et 22 | 15 h 06 | 15 h 13 | 7 min | 43 min |
+| Palier · où vont mes données ? | 23 et 24 | 15 h 13 | 15 h 19 | 6 min | 49 min |
+| Marche 4 · Fabriquer (PracTice Store) | 25 à 28 | 15 h 19 | 15 h 26 | 7 min | 56 min |
+| Clôture | 29 et 30 | 15 h 26 | 15 h 30 | 4 min | 60 min |
 
-Les notes donnent un temps par slide ; leur somme fait 57 min 30, soit 2 min 30 de marge (la marche 1 dure 10 min 30 depuis le retrait, le 19/11/2026, de la slide des questions de clarification : ChatGPT lance désormais la recherche approfondie sans poser de questions ; elle finit donc vers 14 h 45 et donne 1 min 30 de marge de plus). Les deux médias Gemini ne se passent pas en entier : 45 secondes du résumé audio (15 min 18) et 2 minutes de la vidéo (6 min 22). La vidéo du cas fil rouge (slide 19, 2 min 48 pour 3 min 30) laisse un peu de marge. Le vrai risque, ce sont les démos en direct (recherche approfondie, carnet, agent) : si l'une traîne, basculer sur la vidéo.
+Les notes donnent un temps par slide ; leur somme fait 59 min 30, soit 30 secondes de marge depuis l'ajout du tutoriel Gemini Notebook (slide 14, 2 min) (la marche 1 dure 10 min 30 depuis le retrait, le 19/11/2026, de la slide des questions de clarification : ChatGPT lance désormais la recherche approfondie sans poser de questions ; elle finit donc vers 14 h 45 et donne 1 min 30 de marge de plus). Les deux médias Gemini ne se passent pas en entier : 45 secondes du résumé audio (15 min 18) et 2 minutes de la vidéo (6 min 22). La vidéo du cas fil rouge (slide 20, 2 min 48 pour 3 min 30) laisse un peu de marge. Le vrai risque, ce sont les démos en direct (recherche approfondie, carnet, agent) : si l'une traîne, basculer sur la vidéo.
 
 ## Vidéos
 
@@ -41,17 +41,18 @@ Toutes les vidéos sont déclarées dans **un seul bloc `window.VIDEOS`, en têt
 | Clé | Slide | Vidéo retenue | Durée | Copie locale |
 |---|---|---|---|---|
 | `recherche` | 8 | Atelier de rentrée, « La recherche approfondie » (v126d57857dbe4dfgqv8) | 1 min 41 | oui |
-| `podcast` | 14 | Résumé audio Gemini Notebook sur les trois rapports, « Stopper l'hémorragie dans le médico-social » (v126d68cf011cqe8ydae, audio M4A) | 15 min 18 | oui |
-| `videogemini` | 15 | Vidéo Gemini Notebook sur les trois rapports, « Stratégies RH décodées » (v126d68cf011al793ap1) | 6 min 22 | oui |
-| `contexte` | 19 | « Context engineering avec Claude Code : du dossier aux trois livrables », démo muette du cas fil rouge de bout en bout, avec sept étapes minutées à côté (v126d68cf57ef0dhuepk, déposée le 19/11/2026) | 2 min 48 | oui |
-| `compterendu` | 21 | « Le compte rendu à la main, avec un harnais » (v126d5d121f03i66a3ar) | 3 min 51 | oui |
-| `application` | 26 | IMT Smart Minutes (v126d62234168kcpdlyv) | 1 min 53 | oui |
+| `tutogemini` | 14 | Tutoriel complet de Gemini Notebook, webinaire du 1er novembre 2026 sur un autre sujet (v126d67bc53e47pow4rw, « geminiNotebook01112026 »), avec huit étapes minutées à côté ; en montrer 2 minutes (0:20 à 2:20) | 9 min 28 | oui |
+| `podcast` | 15 | Résumé audio Gemini Notebook sur les trois rapports, « Stopper l'hémorragie dans le médico-social » (v126d68cf011cqe8ydae, audio M4A) | 15 min 18 | oui |
+| `videogemini` | 16 | Vidéo Gemini Notebook sur les trois rapports, « Stratégies RH décodées » (v126d68cf011al793ap1) | 6 min 22 | oui |
+| `contexte` | 20 | « Context engineering avec Claude Code : du dossier aux trois livrables », démo muette du cas fil rouge de bout en bout, avec sept étapes minutées à côté (v126d68cf57ef0dhuepk, déposée le 19/11/2026) | 2 min 48 | oui |
+| `compterendu` | 22 | « Le compte rendu à la main, avec un harnais » (v126d5d121f03i66a3ar) | 3 min 51 | oui |
+| `application` | 27 | IMT Smart Minutes (v126d62234168kcpdlyv) | 1 min 53 | oui |
 
 Toutes sont muettes ou presque (captures d'écran à commenter), sauf l'extrait du résumé audio dans Gemini Notebook (vers 3 min 40). Les autres vidéos fournies sont téléchargées dans `assets/videos/` et listées en commentaire dans le bloc, prêtes à servir : démo Cytiva muette (2 min 11), Gemini Notebook Cytiva (9 min 28), « Articuler plusieurs outils IA » (2 min, sur la création d'un visuel : écartée), PracTice Store public (7 min 57), espaces privés (2 min 32), LearnyBot (3 min 03), trailer du PracTice Store (55 s, sans permalien).
 
-Slide 19 (ajoutée le 19/11/2026) : 3 min 30, elle reprend la place de la vidéo Cowork « Le pipeline vidéo », retirée le même jour à la demande de Julien (moins pertinente que la démo du cas fil rouge ; gardée en commentaire dans `window.VIDEOS`). Le minutage de 59 min est inchangé.
+Slide 20 (ajoutée le 19/11/2026) : 3 min 30, elle reprend la place de la vidéo Cowork « Le pipeline vidéo », retirée le même jour à la demande de Julien (moins pertinente que la démo du cas fil rouge ; gardée en commentaire dans `window.VIDEOS`). Le minutage de 59 min est inchangé.
 
-Point de vigilance : la vidéo du compte rendu (slide 21) montre un vrai compte rendu interne avec des noms ; elle a déjà été diffusée aux Jeudis de l'IA, mais avancer vite sur le document final.
+Point de vigilance : la vidéo du compte rendu (slide 22) montre un vrai compte rendu interne avec des noms ; elle a déjà été diffusée aux Jeudis de l'IA, mais avancer vite sur le document final.
 
 ### Mode hors ligne
 
@@ -63,7 +64,7 @@ Point de vigilance : la vidéo du compte rendu (slide 21) montre un vrai compte 
 
 ## Productions Gemini Notebook sur le cas fil rouge (ajoutées le 19/11/2026)
 
-Slides 14 à 16, à partir des trois rapports mis en sources dans Gemini Notebook :
+Slides 15 à 17, à partir des trois rapports mis en sources dans Gemini Notebook :
 - **Résumé audio** « Stopper l'hémorragie dans le médico-social » (15 min 18) et **vidéo** « Stratégies RH décodées » (6 min 22), déposés par Julien sur le Médiaserveur (chaîne « Embed public »), avec copies locales `Gemini_Podcast_Medico_Social.m4a` et `Gemini_Video_Strategies_RH.mp4` dans `assets/videos/` (originaux dans `_Projets/Ubiscast/videosAImporterDansEmbedPublic/Deposees/`).
 - **Rapport** « Vaincre la crise d'attractivité : attirer et fidéliser dans le secteur social et médico-social » (fonction « Rapport », format leçon interactive, cinq parties) : lien court **https://is.gd/kwysbi** (créé le 19/11/2026 sur is.gd, sans compte, vérifié) et QR code `assets/img/qr_rapport_gemini.png`. Sur la slide, le lien affiché est le lien court mais il pointe directement vers l'adresse complète, qui marche même si is.gd tombe : https://notebook.google.com/notebook/f7570436-d31e-4c6a-86fa-313412261b63/artifact/ea391416-37a0-4d74-87cd-34538eba417c
 - La vidéo « Apprendre avec Gemini Notebook » de l'atelier de rentrée sort du diaporama (gardée en commentaire dans `window.VIDEOS`) pour rester à deux vidéos dans la marche 2.
@@ -75,13 +76,13 @@ Les trois rapports de recherche approfondie déposés par Julien dans `../recher
 - **Slide 9, trois chiffres** : 4,5 % de postes vacants et 24,4 % de turnover dans les ESMS (CNSA, données 2023, cités par les rapports 1 et 3), « une éducatrice spécialisée sur deux a quitté le métier neuf ans après » (DREES, mars 2025, rapport 2), et 68,4 % de recrutements difficiles d'éducateur·rices spécialisé·es en Essonne (France Travail, BMO 2026, rapport 2). La page de la CNSA n'a pas pu être relue le 19/11 (certificat refusé) : à ouvrir une fois avant la séance.
 - **Slide 10, le piège** : le rapport 1 cite la même source DREES pour deux salaires, 2 090 € et 1 395 €. Vérification du 19/11 : 2 090 € figure bien dans la publication DREES du 29/09/2025, 1 395 € est introuvable. Ses renvois de sources sont aussi restés illisibles à l'export (【66†L107】) : exemple vivant du « travail délégué ».
 - **Écarté** : les chiffres des formations sociales du rapport 1 (57 300 inscrits en 2023, −11,2 % en première année depuis 2010) n'ont pas été retrouvés à la DREES, dont la dernière publication porte sur 2025 (55 900 inscrits, −2,3 %).
-- **Slide 18** : les trois livrables produits par Claude Code, avec aperçu et lien PDF (`assets/livrables/`), et le lien vers le site du tableau de bord.
+- **Slide 19** : les trois livrables produits par Claude Code, avec aperçu et lien PDF (`assets/livrables/`), et le lien vers le site du tableau de bord.
 
 ## Fichiers
 
 - `index.html` : la présentation (moteur repris de la présentation CODOFO du 04/11/2026, sommaire et commandes tactiles de l'atelier de rentrée).
 - `assets/rapports/` : les trois rapports en PDF (publiés avec la présentation).
-- `assets/img/` : logo IMT-BS, photo, capture du PracTice Store, QR codes de la présentation, du rapport Gemini et du profil LinkedIn (slides 2 et 29).
+- `assets/img/` : logo IMT-BS, photo, capture du PracTice Store, QR codes de la présentation, du rapport Gemini et du profil LinkedIn (slides 2 et 30).
 - `assets/videos/` : copies locales des vidéos (hors git).
 - `construire_versions.py` : génère `Presentation_IRFASE_Outils_IA_20261120_autonome.html` (images intégrées, vidéos en lien relatif vers `assets/videos/`).
 - Dépôt git publié sur https://github.com/practice-imtbs/presentation-irfase-ia (public).
